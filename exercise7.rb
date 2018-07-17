@@ -17,8 +17,11 @@
 # You'll have to call the same method multiple times.
 # Try breaking down the problem into smaller pieces that you know wrap_text can solve.
 
-def wrap_text(string)
-  return "===" + (string) + "==="
+def wrap_text(flair, message)
+  return flair + message + flair.reverse
 end
 
-puts
+flair = "-----=====#####"
+message = "CHECK OUT THIS AWESOME TEXT WRAP"
+
+puts "#{wrap_text(flair, message)}"
