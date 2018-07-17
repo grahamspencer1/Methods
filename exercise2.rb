@@ -5,13 +5,15 @@
 
 def negative?(num)
   if num >= 0
-    puts "True"
+    return true
   else
-    puts "False"
+    return false
   end
 end
 
 puts negative?(3)
-puts negative?(-13049132)
+puts negative?(987654321)
 puts negative?(0)
+puts negative?(-0)
 puts negative?(-3)
+puts negative?(-1234)
